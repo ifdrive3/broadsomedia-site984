@@ -1,0 +1,24 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Broadsomedia™ Content API",
+    "description": "Read-only API exposing Broadsomedia™ content and metadata for AI/bot discovery.",
+    "version": "1.0.0",
+    "contact": { "email": "contact@broadsomedia.agency", "url":"https://broadsomedia.agency/" }
+  },
+  "servers":[{"url":"https://broadsomedia.agency"}],
+  "paths": {
+    "/api/ai-export": {
+      "get": {
+        "summary": "Export Broadsomedia™ content as NDJSON",
+        "operationId": "getAIExport",
+        "responses": {
+          "200": {
+            "description": "NDJSON with site sections and metadata",
+            "content": { "application/x-ndjson": { "schema": { "type": "string" } } }
+          }
+        }
+      }
+    }
+  }
+}

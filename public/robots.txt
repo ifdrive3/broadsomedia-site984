@@ -1,0 +1,20 @@
+# Broadsomedia™ robots.txt — allow major crawlers, reduce noise from scrapers
+# Keep in sync with .well-known/ai-policy.json for training rules.
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: *
+Disallow: /netlify/
+Disallow: /netlify/functions/
+Disallow: /api/
+Disallow: /private/
+Crawl-delay: 10
+
+Sitemap: https://broadsomedia.agency/sitemap.xml

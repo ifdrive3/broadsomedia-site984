@@ -1,0 +1,17 @@
+{
+  "name": "broadsomedia-site",
+  "version": "1.0.0",
+  "description": "Broadsomedia™ static site + Netlify functions",
+  "main": "index.js",
+  "scripts": {
+    "start": "netlify dev",
+    "build": "echo 'No build step — static files in public/'",
+    "generate-sitemap": "node deploy-sitemap.js"
+  },
+  "devDependencies": {
+    "netlify-cli": "^12.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

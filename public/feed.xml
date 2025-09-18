@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Broadsomedia™ — Updates</title>
+    <link>https://broadsomedia.agency/</link>
+    <description>For Those Who Set the Standard — Broadsomedia™ official updates and announcements.</description>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Sep 2025 20:00:00 +0000</lastBuildDate>
+    <ttl>60</ttl>
+
+    <item>
+      <title>Broadsomedia™ — Site Launch</title>
+      <link>https://broadsomedia.agency/</link>
+      <guid isPermaLink="true">https://broadsomedia.agency/</guid>
+      <pubDate>Thu, 18 Sep 2025 20:00:00 +0000</pubDate>
+      <description><![CDATA[
+        Broadsomedia™ launches its official website — precision systems, enterprise-grade security, and market-defining services.
+      ]]></description>
+    </item>
+
+  </channel>
+</rss>

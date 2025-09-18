@@ -1,0 +1,14 @@
+{
+  "policy": {
+    "indexing": "allowed",
+    "aiTrainingUse": "prohibited",
+    "derivativeUse": "prohibited",
+    "redistribution": "prohibited"
+  },
+  "owner": {
+    "name": "Broadsomedia™",
+    "contact": "contact@broadsomedia.agency",
+    "url": "https://broadsomedia.agency/"
+  },
+  "lastUpdated": "2025-09-18"
+}

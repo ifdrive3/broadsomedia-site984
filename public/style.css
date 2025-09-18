@@ -1,0 +1,111 @@
+/* styles.css — Minimal, modern, responsive styles for Broadsomedia™ */
+
+/* Basic tokens */
+:root{
+  --bg:#0f1115;
+  --card:#111316;
+  --muted:#aeb3b8;
+  --accent:#00b2ff;
+  --accent-2:#6be4b8;
+  --text:#f6f7f8;
+  --max-width:1200px;
+  --radius:12px;
+  font-family: "Darker Grotesque", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height:1.5;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;}
+body{
+  margin:0;
+  background:linear-gradient(180deg,#070809 0%, var(--bg) 100%);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  font-size:16px;
+}
+
+/* Layout */
+.container{
+  width:calc(100% - 40px);
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:40px 0;
+}
+
+/* Header */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(6,8,10,0.6);
+  backdrop-filter: blur(6px);
+  border-bottom:1px solid rgba(255,255,255,0.03);
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  padding:14px 0;
+}
+.brand {display:flex;align-items:center; text-decoration:none;color:inherit}
+.logo{height:42px;width:auto;display:block}
+.site-nav{display:flex;gap:14px;align-items:center;margin-left:auto}
+.site-nav a{color:var(--muted);text-decoration:none;font-weight:500}
+.nav-toggle{display:none;background:none;border:0;color:var(--text);font-size:20px}
+
+/* Buttons */
+.btn{
+  display:inline-block;
+  padding:10px 16px;
+  border-radius:10px;
+  text-decoration:none;
+  color:var(--text);
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.06);
+  font-weight:600;
+}
+.btn.primary{
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));
+  border:0;
+  color:#041017;
+  box-shadow:0 6px 18px rgba(3,140,175,0.15);
+}
+
+/* Hero */
+.hero{padding:80px 0 60px}
+.hero-title{font-size:44px;margin:0 0 6px}
+.hero-sub{font-weight:700;color:var(--accent);margin:0 0 12px}
+.hero-lead{max-width:900px}
+.hero-ctas{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+
+/* Sections */
+h2{font-size:24px;margin:0 0 14px}
+.muted{color:var(--muted)}
+.sub-line{color:var(--muted);margin-top:8px}
+.center{text-align:center}
+.grid{display:grid;gap:18px}
+.who-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
+.features-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));}
+.tiers-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+
+/* Footer */
+.site-footer{border-top:1px solid rgba(255,255,255,0.03);padding:22px 0;background:transparent}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.footer-nav a{color:var(--muted);text-decoration:none}
+
+/* Responsiveness */
+@media (max-width:900px){
+  .site-nav{display:none}
+  .nav-toggle{display:inline-block;margin-left:auto}
+  .header-inner{gap:8px}
+  .container{padding:24px}
+  .hero-title{font-size:34px}
+}
+
+/* Small utilities */
+.lead{font-size:1.05rem}
+.price{font-weight:700;color:var(--accent)}
+.contact-email{margin-top:12px}
+.socials a{color:var(--muted);text-decoration:none}

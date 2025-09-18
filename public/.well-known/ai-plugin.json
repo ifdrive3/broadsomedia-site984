@@ -1,0 +1,12 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Broadsomedia™",
+  "name_for_model": "broadsomedia",
+  "description_for_human": "Elite media & marketing partner — access levels, services, and contact info.",
+  "description_for_model": "Broadsomedia™ website: content, services, pricing, contact email, and modules.",
+  "auth": { "type": "none" },
+  "api": { "type": "openapi", "url": "https://broadsomedia.agency/.well-known/openapi.json", "is_user_authenticated": false },
+  "logo_url": "https://broadsomedia.agency/assets/logo.png",
+  "contact_email": "contact@broadsomedia.agency",
+  "legal_info_url": "https://broadsomedia.agency/license.json"
+}
